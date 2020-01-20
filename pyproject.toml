@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "silicoflow"
+version = "0.1.dev0"
+description = "Metaflow: More Data Science, Less Engineering"
+license = "Apache License 2.0"
+authors = ["Machine Learning Infrastructure Team at Netflix <help@metaflow.org>"]
+packages = [
+    { include = "silicoflow", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = "~3.5"
+boto3 = "*"
+click = "*"
+requests = "*"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.3.3"
+coverage = "^5.0.3"
